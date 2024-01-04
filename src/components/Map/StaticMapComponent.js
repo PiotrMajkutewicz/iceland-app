@@ -1,7 +1,13 @@
 import { CircularProgress } from "@mui/material";
 import React, { useState } from "react";
 
-const MapComponent = ({ lat, lng, width = 400, height = 225, zoom = 9 }) => {
+const StaticMapComponent = ({
+  lat,
+  lng,
+  width = 400,
+  height = 225,
+  zoom = 9,
+}) => {
   const [loading, setLoading] = useState(true);
   const fakeTimeout = Math.floor(Math.random() * 3) + 1;
   const onLoad = () => {
@@ -39,4 +45,4 @@ const MapComponent = ({ lat, lng, width = 400, height = 225, zoom = 9 }) => {
   );
 };
 
-export default MapComponent;
+export default StaticMapComponent;
