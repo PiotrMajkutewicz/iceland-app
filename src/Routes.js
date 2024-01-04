@@ -1,6 +1,7 @@
 import Earthquakes from "components/Earthquakes/Earthquakes";
 import LicencePlates from "components/LicencePlates/LicencePlates";
 import NotFound from "components/NotFound/NotFound";
+import Petrol from "components/Petrol/Petrol";
 import Welcome from "components/Welcome/Welcome";
 import { Routes, Route } from "react-router-dom";
 
@@ -17,6 +18,10 @@ const getRoutes = () => {
     {
       path: "/earthquakes",
       Component: Earthquakes,
+    },
+    {
+      path: '/petrol',
+      Component: Petrol
     },
     {
       path: '*',

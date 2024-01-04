@@ -9,6 +9,7 @@ export default function WelcomeCards() {
       iconName: "DirectionsCarOutlined",
     },
     { name: "Earthquakes", to: "/earthquakes", iconName: "PublicOutlined" },
+    { name: "Petrol", to: "/petrol", iconName: "LocalGasStationOutlined" },
   ];
 
   const getColors = (isOdd) => ({

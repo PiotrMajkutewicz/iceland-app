@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import PublicOutlined from "@mui/icons-material/PublicOutlined";
+import LocalGasStationOutlined from "@mui/icons-material/LocalGasStationOutlined";
 import { Link } from "react-router-dom";
 import { isLinkSelected } from "services";
 
@@ -30,6 +31,11 @@ export default function ClippedDrawer({ appName = "App" }) {
       name: "Earthquakes",
       icon: <PublicOutlined />,
       to: "/earthquakes",
+    },
+    {
+      name: "Petrol",
+      icon: <LocalGasStationOutlined />,
+      to: "/petrol",
     },
   ];
 

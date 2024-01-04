@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import MapComponent from "components/MapComponent/MapComponent";
+import StaticMapComponent from "components/Map/StaticMapComponent";
 import { getLocationNameFromReadableLocation, parseTimestamp } from "services";
 
 export default function EarthquakeItem({
@@ -18,7 +18,7 @@ export default function EarthquakeItem({
         <Typography variant="h5">
           {getLocationNameFromReadableLocation(humanReadableLocation)}
         </Typography>
-        <MapComponent lat={latitude} lng={longitude}></MapComponent>
+        <StaticMapComponent lat={latitude} lng={longitude}></StaticMapComponent>
         <Box component="div" sx={{ borderLeft: `15px solid ${color}` }}>
           <Typography variant="body1">
             Time:{" "}
